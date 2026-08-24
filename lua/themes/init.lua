@@ -1,10 +1,16 @@
--- load different themes.
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "sh", "zsh", "bash" },
-	callback = function()
-		pcall(vim.cmd.colorscheme, "kanagawa")
-	end,
-})
+return {
+    "rose-pine/neovim",
+    name = "rose-pine",
 
--- Idk, this will be used as plugin.
-return {}
+    config = function()
+        require("rose-pine").setup({
+            palette = {
+                main = {
+                    base = "#010101",
+                },
+            },
+        })
+
+        vim.cmd.colorscheme("rose-pine")
+    end,
+}
