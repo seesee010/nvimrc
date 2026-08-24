@@ -18,7 +18,7 @@ vim.keymap.set({ "n" }, "<Esc>", ":nohl<Esc>")
 -- vim.keymap.set({ "o", "x" }, "aÜ", "a]", { remap = true })
 -- vim.keymap.set({ "i", "n" }, "ü", "[")
 -- vim.keymap.set({ "i", "n" }, "Ü", "]")
--- 
+--
 -- vim.keymap.set({ "n", "i" }, "´", "~")
 
 vim.keymap.set("n", "<leader>j", "<C-w>j")
