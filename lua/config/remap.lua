@@ -49,7 +49,7 @@ end)
 
 -- diagnostic
 vim.keymap.set("n", "]d", function()
-	vim.diagnostic.goto_prev()
+	vim.diagnostic.goto_prev() -- i will change this some day, but i guess as long as it will still work I won't switch.
 end)
 
 vim.keymap.set("n", "[d", function()
@@ -70,3 +70,7 @@ vim.keymap.set("n", "<C-k>", ":cprev<CR>")
 -- But if you want to see them, you can do this:
 -- vim.keymap.set('n', '', ':copen<CR>')
 vim.keymap.set("n", "<leader>q", ":cclose<CR>") -- you could also use ':q' (if you are in that buffer)
+
+-- shorter way for a ':Ex':
+-- the key 'k' is just choosen randomly, because it is not used anywhere else.
+vim.keymap.set("n", "<leader>k", ":Ex<CR>")
