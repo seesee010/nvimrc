@@ -1,1 +1,2 @@
-return { require('themes.dThemes.rose-pine') }
+local choosenTheme = "rose-pine"
+return { require('themes.dThemes.' .. choosenTheme) }
