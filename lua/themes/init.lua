@@ -1,1 +1,1 @@
-return { require('dThemes.rose-pine') }
+return { require('themes.dThemes.rose-pine') }
