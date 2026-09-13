@@ -23,6 +23,7 @@ return {
 			"yamlls",
 			"bashls",
 			"marksman",
+			"gopls",
 
 			-- fmt
 			"stylua",
