@@ -16,4 +16,6 @@
 -- 		},
 -- 	},
 -- }
+-- doesn't work that well: very fragile and breaks on typst files.
+-- temporarily off until it can be limited to non-typst filetypes.
 return {}
