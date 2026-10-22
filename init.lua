@@ -25,6 +25,19 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 -- for lsp
 vim.opt.signcolumn = "yes"
+-- jdtls itself needs Java 21+ to run, but projects are built against Java 8
+vim.lsp.config("jdtls", {
+	cmd_env = { JAVA_HOME = "/usr/lib/jvm/java-21-openjdk" },
+	settings = {
+		java = {
+			configuration = {
+				runtimes = {
+					{ name = "JavaSE-1.8", path = "/usr/lib/jvm/java-8-openjdk/", default = true },
+				},
+			},
+		},
+	},
+})
 
 require("config.remap")
 

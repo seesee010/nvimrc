@@ -9,6 +9,7 @@
 -- yaml: yamlls
 -- bash: bashls
 -- md: marksman
+-- java: jdtls
 --
 return {
 	"mason-org/mason-lspconfig.nvim",
@@ -24,24 +25,7 @@ return {
 			"bashls",
 			"marksman",
 			"gopls",
-
-			["jdtls"] = function()
-				require("lspconfig").jdtls.setup({
-					settings = {
-						java = {
-							configuration = {
-								runtimes = {
-									{
-										-- map the jdk to java8
-										name = "JavaSE-1.8",
-										path = "/usr/lib/jvm/java-8-openjdk/",
-									},
-								},
-							},
-						},
-					},
-				})
-			end,
+			"jdtls",
 
 			-- fmt
 			"stylua",
